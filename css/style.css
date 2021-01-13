@@ -28,9 +28,11 @@ body {
   margin: 0px;
 }
 
+
 .top-header {
   display: flex;
   flex-direction: row;
+  margin-bottom: var(--size-20);
 }
 
 .top-header-left {
@@ -50,6 +52,53 @@ body {
 
 .inline-item {
   display: inline; 
-  margin-right: 5px;
-  margin-left: 5px;;
+  margin-right: 7px;
+  margin-left: 7px;
 }
+
+.top-header-left .fas {  margin-right: 5px; }
+
+.inline-item .fas {
+  margin-left: 3px;
+}
+
+.second-header {
+  display: flex;
+  align-items: center;
+}
+
+.second-header-left{ margin-right: auto;}
+
+.second-header-left .front-logo{
+  box-sizing: border-box;
+  color:var(--blue-font);
+  width: 185px;  
+}
+
+.second-header .second-header-right
+{
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.second-header .second-header-right ul {
+  display: flex;
+  align-items: center;
+}
+.second-header .second-header-right ul li:nth-child(1) a {color: var(--blue-font);}
+
+.second-header .second-header-right ul li {
+  display: inline-block;
+  margin: 0px var(--size-10);  
+  color: var(--dark-gray);
+  font-size: var(--size-18);
+  font-weight: 500;
+}
+
+
+
+

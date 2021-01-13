@@ -1,0 +1,20 @@
+* {
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  width: var(--size-150);
+  height: var(--size-30);
+  background-color: var(--blue-font);  
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+}
