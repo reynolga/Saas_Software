@@ -35,7 +35,7 @@
 
 
 body {
-  margin: 0px;
+  margin: 0px; ;
 }
 
 header {
@@ -152,7 +152,7 @@ header {
 
 .icon-small, .icon-large{   background-color: white;  }
 
-.icon-small { height: 50px; }
+.icon-small { height: 55px; }
 .icon-large { height: 70px; }
 
 
