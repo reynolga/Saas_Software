@@ -138,12 +138,16 @@ header {
 .empowering-section .learn-more .fa-angle-right { margin-left: 5px;}
 
 
-.icon { 
-  height: 75px;
-  position: absolute; 
+.icon-container {
+  position: absolute;  
+  padding: 20px;
   background-color: white;
   border-radius: 50%;
-  padding: 15px;
+}
+
+.icon{ 
+  height: 80px;  
+  background-color: white;  
 }
 
 .google-icon {  
@@ -153,7 +157,7 @@ header {
 
 .atlassian-icon {  
   right: 305px;
-  top: 300px;
+  top: 300px;  
 }
 
 .asana-icon {
