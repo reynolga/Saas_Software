@@ -346,3 +346,27 @@ header {
   border-color: rgba(243, 243, 243, 0.465);
   border-width: 1px;
 }
+
+.banner-two-div {
+  position: relative;
+}
+
+.banner-two {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  }
+
+.banner-two-div i {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  padding: 5px;
+  top: 50%;
+  right: 50%;  
+  background-color: white;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;  
+  box-shadow: -9px 10px 8px -2px rgba(196,196,196,0.5);
+  }
