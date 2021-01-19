@@ -20,3 +20,8 @@
   color: white;
   font-weight: 500;
 }
+
+a { 
+  text-decoration: none;
+  color: var(--gray-font);
+}

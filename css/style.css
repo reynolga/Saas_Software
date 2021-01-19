@@ -5,6 +5,8 @@
 --green: rgb(0, 201, 166);
 --blue-font: rgb(58, 127, 255);
 --dark-gray: rgb(106, 121, 138);
+--light-blue-background: rgb(248, 250, 254);
+--light-blue-circle: rgb(236, 242, 255);
 
 --success:#64ECF5;
 --danger: #FF8B8D;
@@ -58,6 +60,7 @@ header {
   margin-right: auto;
 }
 
+
 .top-header-right {
   display: inline;
   color:var(--dark-gray);
@@ -104,10 +107,10 @@ header {
 
 .second-header .second-header-right ul li {
   display: inline-block;
-  margin: 0px var(--size-14);  
+  margin: 0px 0px 0px var(--size-30);  
   color: var(--dark-gray);
   font-size: var(--size-18);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .empowering-section{
@@ -194,6 +197,7 @@ header {
 
 .key-benefits {
   text-align: center;
+  margin-bottom: 200px;
 }
 
 .key-benefits h2 {
@@ -250,4 +254,95 @@ header {
 
 .cards:nth-child(4) p {
   margin-bottom: 55px;
+}
+
+
+.banner-one {
+  background-color: var(--light-blue-background);
+}
+
+.banner-one-grid
+{
+   display: grid;
+   grid-template-columns: 1fr 1fr;  
+}
+
+.banner-one img {
+  margin-top: 100px;
+}
+
+.perspective {
+  justify-self: center;
+  align-self: center;  
+}
+
+.perspective h2 {
+  font-size: 30pt;
+  margin: 50px 30px; 
+}
+
+
+.perspective a { 
+  align-self: start;
+  margin: 20px 30px;
+}
+
+.why-front h2 {
+  text-align: center;
+  font-size:36pt;
+}
+
+.why-front p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 100px; 
+  font-size: 16pt;
+  font-weight: 300;
+  max-width: 750px;
+}
+
+.circles {  
+  display: flex;
+  justify-content: center;
+}
+
+.circles li {
+  display: block;
+}
+
+.outer-circle{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  height: 50px;
+  width: 50px;
+  background-color:var(--light-blue-circle);
+  border-radius: 50%;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5px;
+  width: 5px;
+  background-color:var(--blue-font);
+  border-radius: 50%;
+}
+
+.circle-component span {
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.circles li hr {
+  width: 175px;
+  margin-top: 28px;
+  margin-left: -15px;
+  margin-right: -15px;  
+  border-color: rgba(243, 243, 243, 0.465);
+  border-width: 1px;
 }
