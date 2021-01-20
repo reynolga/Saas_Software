@@ -6,7 +6,7 @@
   max-width: 1250px;
   margin: 0 auto;
   position: relative;
-  background-color: 253,253,253,1;
+  background-color: rgba(253,253,253,1);
 }
 
 .btn {

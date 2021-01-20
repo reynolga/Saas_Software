@@ -410,7 +410,7 @@ header {
   }
 
   .trusted-by {
-    margin: 50px 0px;
+    margin: 50px 0px 100px 0px;
   }
 
   
@@ -431,3 +431,70 @@ header {
     margin: 0px 75px;
   }
   .trusted-by .logo-section li img { height: 100%;} 
+
+
+  .pricing {
+    margin-bottom: 300px;
+  }
+  .pricing h3 {
+    font-size: 26pt;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .pricing .cost {
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px,300px));
+    grid-template-rows:  repeat(auto-fit, minmax(125px, 250px));
+    gap: 10px;        
+  }
+
+  .price-card {
+    grid-row: 1 / 3;  
+    grid-column: 1 / 3;
+    width: 350px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 5px 5px 5px rgba(235, 235, 235, 0.376);
+  }
+
+ .price-card h3{
+  text-align: left;
+  margin-left: 15px;  
+ }
+ .price-card hr {
+  border-color: rgba(243, 243, 243, 0.465);
+  margin: 30px 15px;
+ }
+ 
+ .price-card p,  .price-card a {
+   box-sizing: border-box;
+   margin: 30px 15px;
+ }
+ .price-card .credit-card {
+   margin-top: 20px;
+}
+
+
+  .mini-price-card {
+    text-align: left;
+  }
+  .mini-price-card img {
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 50px;
+  }
+  .mini-price-card h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  .mini-price-card p {
+    margin-top: 5px;
+    padding-left: 10px;
+  }
