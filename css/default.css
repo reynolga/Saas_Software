@@ -10,12 +10,14 @@
 }
 
 .btn {
+  display: block;
   text-decoration: none;
-  width: var(--size-150);
-  height: var(--size-50);
+  width: 125px;
+  height: 25px;
+  line-height: 25px;
   background-color: var(--blue-font);  
   text-align: center;
-  padding: 15px 25px;
+  padding: 10px 5px;
   border-radius: 25px;
   color: white;
   font-weight: 500;
