@@ -517,7 +517,6 @@ margin: 30px 35px;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
-
 .form-grid-right {
   background-color: white;
   max-width: 450px;
@@ -525,13 +524,50 @@ margin: 30px 35px;
   margin-bottom: 40px;
   border-radius: 10px;
 }
+.form-grid-right h4 {
+  padding-left:25px;
+  font-size: 14pt;
+}
 .form-row {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.form-row input{
+.form-row .form-input{
   box-sizing: border-box;
+  margin: 0px 10px;
   flex: 1;
-  margin: 5px 20px;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 5px;
+  border-color: rgb(219, 219, 219);
 }
 
+.form-row textarea  {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px 10px;
+  border-color: rgb(219, 219, 219);
+  resize: horizontal;
+}
+
+.form-row-checkbox p {
+  padding: 0px;
+  margin: 0px 5px;
+}
+
+.form-row-checkbox input {
+  align-self: flex-start;
+}
+
+.form-grid-right .btn {  
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
