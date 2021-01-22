@@ -125,10 +125,13 @@ font-size: 45pt;
 }
 
 .empowering-section p {
-font-size: 18pt;
+font-size: 16pt;
 margin-bottom: var(--size-30);
 }
 
+.empowering-section a { 
+  display: inline-block;
+}
 .empowering-section a .fa-play-circle {
 margin-right: var(--size-8);
 }
@@ -202,14 +205,14 @@ margin-bottom: 200px;
 }
 
 .key-benefits h2 {
-font-size: 36pt;
+font-size: 32pt;
 margin-left:auto;
 margin-right:auto;
 }
 
 .key-benefits p {
 max-width: 750px;
-font-size: 16pt;
+font-size: 13pt;
 margin: 0px auto;
 padding: initial 5px;
 margin-bottom: var(--size-30);
@@ -235,7 +238,7 @@ box-shadow: -10px 10px 16px 10px rgb(251, 251, 251);
 
 .cards h3 {
 margin-top: var(--size-30);
-font-size: 20pt;
+font-size: 15pt;
 }
 
 .cards h3 > span { 
@@ -278,7 +281,7 @@ align-self: center;
 }
 
 .perspective h2 {
-font-size: 30pt;
+font-size: 32pt;
 margin: 50px 30px; 
 }
 
@@ -290,7 +293,7 @@ margin: 20px 30px;
 
 .why-front h2 {
 text-align: center;
-font-size:36pt;
+font-size:32pt;
 }
 
 .why-front p {
@@ -647,10 +650,10 @@ margin: 30px 35px;
 }
 
 .footer-grid {
-  max-width: 1050px;
+  max-width: 1100px;
   display: grid;
   grid-template-columns: 300px repeat(auto-fit, minmax(125px, 150px));
-  gap: 30px;
+  gap: 35px;
   margin-left: auto;
   margin-right: auto;
 }
