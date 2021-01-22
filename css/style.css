@@ -434,9 +434,7 @@ box-shadow: -9px 10px 8px -2px rgba(196,196,196,0.5);
 .trusted-by .logo-section li img { height: 100%;} 
 
 
-.pricing {
-  margin-bottom: 300px;
-}
+
 .pricing h3 {
   font-size: 26pt;
   text-align: center;
@@ -517,6 +515,45 @@ margin: 30px 35px;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
+.form-grid-left { 
+  align-self: center;
+  justify-self: center;
+  max-width: 300px;
+}
+
+.form-grid-left * { color : white;}
+.form-grid-left h3{ 
+  font-size: 20pt;
+}
+.form-grid-left .goal { 
+  font-size: 11pt;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.form-grid-left .quote { 
+  font-size: 14pt;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+.form-grid-left hr { 
+  width: 147px;
+  margin: 0 0;
+  border-color: rgba(243, 243, 243, 0.192);
+  border-width: 1px;
+} 
+.form-grid-left h4 { 
+  margin: 0px;
+  font-weight: 400;
+}
+.form-grid-left .title {
+  margin-top: 0px;
+  font-size: 10pt;
+  font-weight: 200;
+} 
+
+
 .form-grid-right {
   background-color: white;
   max-width: 450px;
@@ -536,7 +573,6 @@ margin: 30px 35px;
   margin-left: 25px;
   margin-right: 25px;
 }
-
 .form-row .form-input{
   box-sizing: border-box;
   margin: 0px 10px;
@@ -546,7 +582,6 @@ margin: 30px 35px;
   border-radius: 5px;
   border-color: rgb(219, 219, 219);
 }
-
 .form-row .form-select-input
 {
   box-sizing: border-box;
@@ -556,14 +591,12 @@ margin: 30px 35px;
   border-radius: 5px;
   border-color: rgb(219, 219, 219);
 }
-
 .form-row select { 
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding-left: 10px;
 }
-
 .form-row textarea  {
   box-sizing: border-box;
   width: 100%;
@@ -574,7 +607,6 @@ margin: 30px 35px;
   border-color: rgb(219, 219, 219);
   resize: horizontal;
 }
-
 .form-row-checkbox p {
   padding: 0px;
   margin: 0px 5px;
