@@ -562,7 +562,7 @@ margin: 30px 35px;
   border-radius: 4px;
 }
 .form-grid-right h4 {
-  padding-left:25px;
+  padding-left:35px;
   font-size: 14pt;
 }
 
@@ -614,7 +614,7 @@ margin: 30px 35px;
 
 .form-row-checkbox p > a {
   color: rgb(100, 100, 117);  
-  border-bottom: 1px solid;
+  border-bottom: 1px dashed rgb(100, 100, 117);
   font-size: 12pt;
 }
 
@@ -624,8 +624,8 @@ margin: 30px 35px;
 }
 
 .form-grid-right .btn {  
-  width: 85%;
-  margin-left: auto;
+  width: 83%;
+  margin-left: 35px;
   margin-right: auto;
   margin-bottom: 50px;
   margin-top: 25px;
@@ -644,4 +644,8 @@ margin: 30px 35px;
 
 .people-row .icon-highlight { 
   max-height: 50px;
+}
+
+.footer-grid {
+
 }
