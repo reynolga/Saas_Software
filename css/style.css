@@ -94,7 +94,6 @@ width: 185px;
 }
 
 
-
 .nav-link {
 text-decoration: none;
 color: var(--dark-gray);
@@ -159,43 +158,98 @@ border-radius: 50%;
 
 .icon-small, .icon-large{   background-color: white;  }
 
-.icon-small { height: 55px; }
-.icon-large { height: 70px; }
+.icon-small { height: 45px; }
+.icon-large { height: 60px; }
 
 
 .google-icon {  
 right: 550px;
 top: 250px;
+animation-name: google-move;
+animation-duration: 1s;  
+}
+
+@keyframes google-move {
+  from {top: 350px; opacity: 0;}
+  to {top: 250px; opacity: 1;}
 }
 
 .atlassian-icon {  
 right: 340px;
 top: 330px;  
+animation-name: atlassian-move;
+animation-duration: 1s; 
+}
+
+@keyframes atlassian-move {
+  0% {top: 430px; opacity: 0;}
+  10% {top: 430px; opacity: 0;}
+  100% {top: 330px; opacity: 1;}
 }
 
 .asana-icon {
 right: 100px;
 top: 275px;
+animation-name: asana-move;
+animation-duration: 1s; 
+}
+
+@keyframes asana-move {
+  0%  {top: 375px; opacity: 0;}
+  15%  {top: 375px; opacity: 0;}
+  100% {top: 275px; opacity: 1;}
 }
 
 .paypal-icon {
 right: 550px;
 top: 500px;
+animation-name: paypal-move;
+animation-duration: 1s; 
+}
+
+@keyframes paypal-move {
+  0% {top: 600px; opacity: 0;}
+  33% {top: 550px; opacity: 0;}
+  100% {top: 500px; opacity: 1;}
 }
 
 .weave-icon {
 right: 230px;
 top: 500px;
+animation-name: weave-move;
+animation-duration: 1s; 
+}
+
+@keyframes weave-move {
+  0% {top: 600px; opacity: 0;}
+  33% {top: 550px; opacity: 0;}
+  100% {top: 500px; opacity: 1;}
 }
 
 .google-drive-icon {
 right: 400px;
 top: 625px;
+animation-name: google-drive-move;
+animation-duration: 1.5s; 
+}
+
+@keyframes google-drive-move {
+  0% {top: 675px; opacity: 0;}
+  33% {top: 675px; opacity: 0;}
+  100% {top: 625px; opacity: 1;}
 }
 
 .calendar-icon {
 right: 100px;
 top: 700px;
+animation-name: calendar-move;
+animation-duration: 1.5s; 
+}
+
+@keyframes calendar-move {
+  0% {top: 750px; opacity: 0;}
+  33% {top: 750px; opacity: 0;}
+  100% {top: 700px; opacity: 1;}
 }
 
 
