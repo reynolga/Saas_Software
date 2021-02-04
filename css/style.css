@@ -28,69 +28,83 @@
 }
 
 .section-1 {  
-background: linear-gradient(170deg, rgba(249,250,252,1) 0%,
+  background: linear-gradient(170deg, rgba(249,250,252,1) 0%,
                                     rgba(246, 246, 246, 0.986) 63%,
                                     rgba(255,255,255,1) 63%,
                                     rgba(253,253,253,1) 63%, 
                                     rgba(253,253,253,1) 100%);
-height: 900px;  
+  height: 900px;  
 }
 
 
 body {
-margin: 0px; ;
+  margin: 0px; ;
 }
 
 header {
-padding-left: 25px;
-padding-right: 75px;
+  padding-left: 25px;
+  padding-right: 75px;
 }
 
 
 .top-header {
-display: flex;
-flex-direction: row;
-margin-bottom: var(--size-20);  
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--size-20);  
 }
 
 .top-header-left {
-display: inline;
-color: var(--dark-gray);
-margin-left: var(--size-10);
-margin-top: var(--size-10);
-margin-right: auto;
+  display: inline;
+  color: var(--dark-gray);
+  margin-left: var(--size-10);
+  margin-top: var(--size-10);
+  margin-right: auto;
 }
 
 
 .top-header-right {
-display: inline;
-color:var(--dark-gray);
-margin-top: var(--size-10);
+  display: inline;
+  color:var(--dark-gray);
+  margin-top: var(--size-10);
 }
 
 .inline-item {
-display: inline; 
-margin-right: 7px;
-margin-left: 7px;
+  display: inline; 
+  margin-right: 7px;
+  margin-left: 7px;
 }
 
 .top-header-left .fas {  margin-right: 5px; }
 
 .inline-item .fas {
-margin-left: 3px;
+  margin-left: 3px;
 }
 
 .second-header {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.3s;
 }
+
+.second-header.sticky {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;  
+  padding: 0px 30px;
+  background-color: white;
+  box-shadow: 0x 0px 20px rgba(48,63,100, 0.2);
+}
+
 
 .second-header-left{ margin-right: auto;}
 
 .second-header-left .front-logo{
-box-sizing: border-box;
-color:var(--blue-font);
-width: 185px;  
+  box-sizing: border-box;
+  color:var(--blue-font);
+  width: 185px;  
 }
 
 
