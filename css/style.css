@@ -296,42 +296,55 @@ font-size: 15pt;
 }
 
 .cards h3 > span { 
-font-size: 14pt;
-font-weight: 500;
-background-color: var(--green);
-color: white;
-padding: 5px 15px;
-border-radius: 15px;
+  font-size: 14pt;
+  font-weight: 500;
+  background-color: var(--green);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
 }
 
 .cards .card-icons {
-text-align: left;
-max-height: 75px;
-max-width: 75px;
+  text-align: left;
+  max-height: 75px;
+  max-width: 75px;
 }
 
 .cards:nth-child(4) p {
-margin-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 
 .banner-one {
-background-color: var(--light-blue-background);
+  background-color: var(--light-blue-background);
+  position: relative;
+  height: 471px;
 }
 
-.banner-one-grid
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr;  
+
+#software-banner {
+  display:none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
-.banner-one img {
-margin-top: 100px;
+
+#software-banner.software-banner-animation {
+  display:block;
+  animation-name: banner-move;
+  animation-duration: 1s;   
 }
+@keyframes banner-move {
+  0% {top: 200px; opacity: 0;}
+  100% {top: 0px; opacity: 1;}
+}
+
 
 .perspective {
 justify-self: center;
 align-self: center;  
+max-width: 500px;
 }
 
 .perspective h2 {
