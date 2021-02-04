@@ -356,25 +356,26 @@ font-size: 15pt;
 
 
 .perspective {
-justify-self: center;
-align-self: center;  
-max-width: 500px;
+  justify-self: center;
+  align-self: center;  
+  max-width: 500px;
+  padding-top: 65px;
 }
 
 .perspective h2 {
-font-size: 32pt;
-margin: 50px 30px; 
+  font-size: 32pt;
+  margin: 50px 30px; 
 }
 
 
 .perspective a { 
-align-self: start;
-margin: 20px 30px;
+  align-self: start;
+  margin: 20px 30px;
 }
 
 .why-front h2 {
-text-align: center;
-font-size:32pt;
+  text-align: center;
+  font-size:32pt;
 }
 
 .why-front p {
