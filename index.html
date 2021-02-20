@@ -3,17 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Google</title>
-
-  <link rel="stylesheet" href="./css/default.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-
+  <meta name="description" content="My cool website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/fb991ba62e.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
@@ -33,10 +34,13 @@
           </div>
         </div>
 
-        <div class="second-header">
+        <div class="second-header">          
             <div class="second-header-left">
               <img class="front-logo" src="./img/project_logo/logo.svg" alt="Front">
             </div>
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+              <span>&#9776</span>
+            </button>
             <div class="second-header-right">
               <ul>
                 <li><a class="nav-link" href="#">Home</a></li>
@@ -47,6 +51,7 @@
                 <li><a class="btn" href="#">Buy Now</a></li>
               </ul>
             </div>
+            
         </div>
     </header>
 
@@ -541,24 +546,28 @@
     var priceCards = document.getElementsByClassName("mini-price-card");
     
     window.onscroll = function() {
-
       
         if(window.pageYOffset > 200) { header.classList.add("sticky");  }
         else                         { header.classList.remove("sticky");  }      
-        
-        
-        if(window.pageYOffset > 300) { softwareBanner.classList.add("software-banner-animation"); }       
-        
-
+                
+        if(window.pageYOffset > 300) { softwareBanner.classList.add("software-banner-animation"); }               
        
         if(window.pageYOffset > 2700)
         {
           for(let card of priceCards){                         
               card.classList.add("price-card-animation");
           }
-        }
-        
+        }               
     }
+
+    // Toggle Navigation button
+    const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({target}) {
+          const expanded = navButton.getAttribute('aria-expanded') === 'true';
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
 
   </script>
 
