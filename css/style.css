@@ -82,6 +82,7 @@ header {
 
 .second-header {
   display: flex;
+  position: relative;
   align-items: center;
   transition: ease-in-out 0.3s;
 }
@@ -105,6 +106,10 @@ header {
   box-sizing: border-box;
   color:var(--blue-font);
   width: 185px;  
+}
+
+[aria-controls="navbarDropdown"]{
+  display: none;
 }
 
 
