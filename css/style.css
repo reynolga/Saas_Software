@@ -330,28 +330,30 @@ font-size: 15pt;
 
 
 .banner-one {
-  background-color: var(--light-blue-background);
-  position: relative;
-  height: 471px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--light-blue-background);    
+  padding-bottom: 50px;
 }
 
 
 #software-banner {
-  display:block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  display: block;  
+  position: relative;
+  flex: 1;
+  right: 0px;  
+  top: 50px;
 }
 
 
-#software-banner.software-banner-animation {
-  display:block;
+#software-banner.software-banner-animation {  
   animation-name: banner-move;
   animation-duration: 1s;   
+  opacity: 1;
 }
 @keyframes banner-move {
   0% {top: 200px; opacity: 0;}
-  100% {top: 0px; opacity: 1;}
+  100% {top: 50px; opacity: 1;}
 }
 
 
@@ -360,6 +362,7 @@ font-size: 15pt;
   align-self: center;  
   max-width: 500px;
   padding-top: 65px;
+  flex: 1;
 }
 
 .perspective h2 {
