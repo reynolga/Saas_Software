@@ -175,6 +175,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
 }
 
 /* Only applies while screen is 1000px or less */
