@@ -175,6 +175,7 @@ margin-bottom: var(--size-30);
 .learn-more .fa-angle-right { margin-left: 5px;}
 
 .icon-flex-container {
+  display: block;
   min-width: 400px;  
   min-height: 600px;  
   flex:1;
