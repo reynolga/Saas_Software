@@ -1,4 +1,13 @@
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 1000px) {
+  .empowering-flex {
+    flex-direction: row;    
+  }
+  .key-benefits {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
 
   [aria-controls="navbarDropdown"]{
     display: block;
@@ -45,5 +54,144 @@
     font-size: var(--size-18);
     font-weight: 600;
   }
+
+  .empowering-flex {
+    flex-direction: column;    
+  }
+  .key-benefits {
+    margin-top: 600px;
+  }
+
 }
+
+@media screen and (max-width: 550px) {
+  
+  .empowering-flex {
+    flex-direction: column;    
+  }
+  .key-benefits {
+    margin-top: 600px;
+  }
+} */
+
+
+
+
+
+
+
+/* Only applies while screen is 480px or less */
+@media screen and (max-width: 480px) {
+  .empowering-flex {
+    flex-direction: column;    
+  }
+  .key-benefits {
+    margin-top: 400px;
+  }
+  .icon-flex-container {
+    margin-top: -180px;
+  }
+ 
+ 
+}
+
+/* Only applies while screen is 768px or less */
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"]{
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ .second-header-right {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ .second-header-right{
+    display: block;    
+    position: absolute;  
+    right: 0;
+    top: 57px;
+    background-color: white;
+    width: 100%;
+    text-align: right;
+  }
+
+  [aria-expanded="true"]~ .second-header-right ul{
+    flex-direction: column;
+    padding-right: 10px;
+    align-items: flex-end;
+  }
+
+  [aria-expanded="true"]~ .second-header-right ul .btn{
+
+    color: var(--dark-gray);
+    font-size: var(--size-18);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: end;
+  }
+
+  [aria-expanded="true"] ~ ul li {
+    margin-right: 20px;
+    color: #666;
+
+    display: block;
+    margin: 0px 0px 0px var(--size-30);  
+    color: var(--dark-gray);
+    font-size: var(--size-18);
+    font-weight: 600;
+  }
+
+  .empowering-flex {
+    flex-direction: column;    
+  }
+  .key-benefits {
+    margin-top: 400px;
+  }
+  .icon-flex-container {
+    margin-top: -180px;
+  }
+
+   .circles {
+   flex-direction: column; 
+  }
+  .circles li hr {
+    display: none;
+  }
+
+  .circles li{
+    display: flex;    
+    justify-content:flex-start;
+    align-items: center;
+  }
+
+  .outer-circle {  
+    display: inline-block;  
+    margin: 10px 10px;
+  }
+
+  .focus-person {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Only applies while screen is 1000px or less */
+@media screen and (max-width: 1000px) {
+  .empowering-flex {
+    flex-direction: column;    
+  }
+  .key-benefits {
+    margin-top: 400px;
+  }
+  .icon-flex-container {
+    margin-top: -180px;
+  }
+
+  
+  
+}
+
+
 
