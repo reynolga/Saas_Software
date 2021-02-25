@@ -30,8 +30,9 @@
     display: block;    
     position: absolute;  
     right: 0;
-    top: 57px;
+    top: 77px;
     background-color: white;
+    background: linear-gradient(165deg, rgba(249,250,252,1) 0%, rgb(241, 241, 241) 100%);
     width: 100%;
     text-align: right;
   }
@@ -63,18 +64,7 @@
     font-size: var(--size-18);
     font-weight: 600;
   }
-
-  .empowering-flex {
-    flex-direction: column;    
-  }
-  .key-benefits {
-    margin-top: 400px;
-  }
-  .icon-flex-container {
-    display: block;
-    margin-top: -180px;
-  }
-
+ 
    .circles {
    flex-direction: column; 
   }
@@ -129,6 +119,7 @@
     margin-left: 30px;
     margin-right: 30px;
     gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
   }
 
   .form-row {
