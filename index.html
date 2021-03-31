@@ -16,7 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fb991ba62e.js" crossorigin="anonymous"></script>
-  
+  <script async src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -91,7 +92,7 @@
       <div class="cards">
         <img class="card-icons" src="./img/icons/customizable.svg" alt="mobile">
         <h3>Customizable</h3>
-        <p>Front template can be easily customized with it's cutting-edge components snd features.</p>
+        <p>Front template can be easily customized with it's cutting-edge components and features.</p>
         <a class="learn-more" href="#">Learn more <i class="fas fa-angle-right"></i></a>
       </div>
       <div class="cards">
@@ -546,36 +547,7 @@
     </div>
   </footer>
 
-  <script>
-    var softwareBanner = document.getElementById("software-banner");
-    var header = document.getElementsByClassName("second-header")[0];
-    var priceCards = document.getElementsByClassName("mini-price-card");
-    
-    window.onscroll = function() {
-      
-        if(window.pageYOffset > 200) { header.classList.add("sticky");  }
-        else                         { header.classList.remove("sticky");  }      
-                
-        if(window.pageYOffset > 400) { softwareBanner.classList.add("software-banner-animation"); }               
-       
-        if(window.pageYOffset > 2900)
-        {
-          for(let card of priceCards){                         
-              card.classList.add("price-card-animation");
-          }
-        }               
-    }
-
-    // Toggle Navigation button
-    const navButton = document.querySelector('button[aria-expanded]');
-        function toggleNav({target}) {
-          const expanded = navButton.getAttribute('aria-expanded') === 'true';
-          navButton.setAttribute('aria-expanded', !expanded);
-        }
-
-        navButton.addEventListener('click', toggleNav);
-
-  </script>
+  
 
 </body>
 </html>
